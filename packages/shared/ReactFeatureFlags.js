@@ -29,7 +29,7 @@ export const enableStrictEffects = false;
 
 // If TRUE, trees rendered with createRoot will be StrictEffectsMode.
 // If FALSE, these trees will be StrictLegacyMode.
-export const createRootStrictEffectsByDefault = false;
+export const createRootStrictEffectsByDefault = true;
 
 // To preserve the "Pause on caught exceptions" behavior of the debugger, we
 // replay the begin phase of a failed component inside invokeGuardedCallback.
@@ -59,17 +59,17 @@ export const enableSuspenseServerRenderer = __EXPERIMENTAL__;
 export const enableSelectiveHydration = __EXPERIMENTAL__;
 
 // Flight experiments
-export const enableLazyElements = __EXPERIMENTAL__;
-export const enableCache = __EXPERIMENTAL__;
+export const enableLazyElements = true;
+export const enableCache = true;
 
 // Only used in www builds.
 export const enableSchedulerDebugging = false;
 
 // Disable javascript: URL strings in href for XSS protection.
-export const disableJavaScriptURLs = false;
+export const disableJavaScriptURLs = true;
 
 // Experimental Scope support.
-export const enableScopeAPI = false;
+export const enableScopeAPI = true;
 
 // Experimental Create Event Handle API.
 export const enableCreateEventHandleAPI = false;
@@ -85,7 +85,7 @@ export const warnAboutUnmockedScheduler = false;
 // the user to see a loading state.
 // Also allows hydration callbacks to fire when a dehydrated boundary gets
 // hydrated or deleted.
-export const enableSuspenseCallback = false;
+export const enableSuspenseCallback = true;
 
 // Part of the simplification of React.createElement so we can eventually move
 // from React.createElement to React.jsx
@@ -98,11 +98,11 @@ export const enableTrustedTypesIntegration = false;
 
 // Enables a warning when trying to spread a 'key' to an element;
 // a deprecated pattern we want to get rid of in the future
-export const warnAboutSpreadingKeyToJSX = false;
+export const warnAboutSpreadingKeyToJSX = true;
 
 export const enableComponentStackLocations = true;
 
-export const enableNewReconciler = false;
+export const enableNewReconciler = true;
 
 export const disableNativeComponentFrames = false;
 
